@@ -1,0 +1,413 @@
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .html-noScroll {
+    scrollbar-width: 5px;
+    /* For Firefox */
+    -ms-overflow-style: 5px;
+    /* For Internet Explorer and Edge */
+  }
+
+  .html-noScroll::-webkit-scrollbar {
+    width: 0px;
+    /* For Chrome, Safari, and Opera */
+  }
+
+  img {
+    pointer-events: none;
+  }
+
+  /* navbar */
+
+  .iconText {
+    font-weight: 200 !important;
+    letter-spacing: 0px !important;
+    font-size: 18px !important;
+    margin-top: 70px !important;
+    color: var(--gray) !important;
+    margin-left: -10px;
+  }
+
+  .navbar {
+    font-family: "syne", sans-serif;
+    font-size: 18px !important;
+    height: 5vh !important;
+    padding-right: 50px !important;
+    border-radius: 0px !important;
+    padding: 20px !important;
+    padding-top: 10px !important;
+    margin-left: 50px;
+    margin-right: 60px;
+    position: absolute;
+  }
+
+  .navbar-logo img {
+    width: 22px;
+    height: 22px;
+    margin-right: 25px !important;
+    margin-top: 50px !important;
+    position: unset;
+    color: var(--gray) !important;
+  }
+
+  .nav-link {
+    color: var(--gray) !important;
+    padding-top: 25px !important;
+    font-family: "syne";
+    font-size: 18px !important;
+    position: relative !important;
+    padding-right: 10px;
+    text-decoration: none;
+    color: var(--gray) !important;
+    letter-spacing: 0.1px;
+    margin-top: 40px;
+  }
+
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: var(--gray);
+    height: 1.5px;
+    width: 78%;
+    left: 50%;
+    bottom: 1px;
+    margin-bottom: 8px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+  }
+
+  .nav-link:hover:after {
+    transform: translateX(-50%) scaleX(1);
+    -webkit-transform: translateX(-50%) scaleX(1);
+  }
+
+  .nav-link img {
+    pointer-events: none; /* Prevent hover and click on the image */
+  }
+  
+  .nav-link:hover img {
+    transform: none; /* Ensure no transformation occurs on hover */
+  }
+
+  .divider{
+    padding-top: 25px !important;
+    font-family: "syne";
+    font-size: 18px !important;
+    position: absolute !important;
+    padding-right: 10px;
+    text-decoration: none;
+    color: var(--gray) !important;
+    letter-spacing: 0.1px;
+    margin-top:38px;
+  }
+
+  .ml-5{
+    margin-left: 12px;
+  }
+
+  .ml-10{
+    margin-left: 8px;
+    margin-top:38px
+  }
+
+  /*
+   Footer
+  */
+  
+  .footer {
+    background-color: #151515;
+    font-family: "syne";
+    font-size: 13px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    letter-spacing: 0.6px;
+    justify-content: center !important;
+  }
+
+  /* ------------------------------------------------------------------- 
+  * ## title page
+  * ------------------------------------------------------------------- */
+
+  .section-title {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    top: 0px !important;
+  }
+
+  .title {
+    font-family: "gara", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 58px;
+  }
+
+  .slogan {
+    font-family: "syne", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.6px;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  
+  /* ------------------------------------------------------------------- 
+  * ## about page
+  * ------------------------------------------------------------------- */
+
+  .aboutPage {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0px !important;
+    min-height: 100vh;
+  }
+
+  .about-container{
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .aboutTitle {
+    padding-top: 20vh;
+    font-family: "syne-b";
+    font-size: 40px;
+    padding-bottom: 5vh;
+  }
+
+  .aboutHeading {
+    padding-top: 10vh;
+    font-family: "syne-s";
+    padding-bottom: 3vh;
+  }
+
+  .aboutText {
+    font-family: "syne";
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: start;
+    padding-top: 20px;
+  }
+
+  .mail {
+    font-family: "syne";
+    margin-top: 30px;
+    font-size: 18px;
+    color: inherit
+  }
+
+  .icon-container {
+    padding-top: 30px;
+    filter: invert();
+    margin-bottom: 80px;
+  }
+  
+  /* Filter for light mode */
+  .light-mode .icon-container {
+    filter: none;
+  }
+
+  .image-container {
+    background-color: var(--image-container-bg);
+    padding: 10px; /* Equal padding on all sides for the image */
+    padding-bottom: 0px;
+    text-align: center; /* Center align the content */
+    width: fit-content; /* Adjust to content width */
+    height: fit-content;
+    margin: 20px; /* Center the entire container on the page */
+    border-radius: 1px; /* Optional: Rounded corners */
+  }
+  
+  .image-container img {
+    display: block; /* Remove inline space */
+    margin: 0 auto; /* Center the image */
+  }
+  
+  .caption {
+    font-size: 12px; /* Adjust as needed */
+    text-align: start;
+    font-family: "syne";
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+  }
+
+  /*
+    WORK PAGE 
+  */
+
+  .work-container{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+  .workTitle {
+    padding-top: 20vh;
+    font-family: "syne-b";
+    font-size: 40px;
+    padding-bottom: 8vh;
+  }
+
+  .workHeading{
+    font-family: "syne-s";
+    text-align: start;
+    font-size: 26px;
+    
+  }
+
+  .workHeading a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .workHeading a:hover{
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .workText {
+    font-family: "syne";
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: start;
+    padding-top: 10px;
+  }
+
+  .work-image-container {
+    background-color: var(--image-container-bg);
+    padding: 10px; /* Equal padding on all sides for the image */
+    text-align: center; /* Center align the content */
+    width: fit-content; /* Adjust to content width */
+    height: fit-content;
+    margin: 0px; /* Center the entire container on the page */
+    border-radius: 1px; /* Optional: Rounded corners */
+  }
+
+  /*
+    TIMELINE (PROJECT PAGE)
+  */
+  
+  .timeline {
+    position: relative;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 0px;
+    margin-top: 100px;
+    list-style-type: none;
+    margin-bottom: 100px;
+ }
+
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 10px;
+    height: 100%;
+    margin-left: -3px;
+    background: var(--image-container-bg);
+    border-radius: 5px;
+    z-index: 5;
+ }
+  .timeline li {
+    padding: 1em 0;
+ }
+
+  .timeline li::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+ }
+  .direction-l {
+    position: relative;
+    width: 470px;
+    float: left;
+    text-align: right;
+    margin-left: 1.5px;
+ }
+
+  .direction-r {
+    position: relative;
+    width: 470px;
+    float: right;
+    padding-left: 2px;
+ }
+
+  .direction-r .flag:before {
+    left: -40px;
+ }
+
+  .direction-l .flag:before, .direction-r .flag:before {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: var(--timeline-dot-inner);
+    border-radius: 20px;
+    border: 5px solid var(--timeline-dot);
+    z-index: 10;
+ }
+
+ .flag-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.prjHeading{
+  font-family: "syne", sans-serif;
+  font-size: 24px;
+}
+
+.prjText-r {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: "syne", sans-serif;
+}
+
+.prjText-l {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.flag-wrapper .flag {
+  position: relative;
+  display: inline;
+  padding: 6px 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/*
+  Icon hover animation
+*/
+
+.hidden {
+  display: none;
+}
+
+.mode-switch:hover #theme-icon {
+  display: none;
+}
+
+.mode-switch:hover #theme-icon-filled {
+  display: inline-block;
+}
+  
+}

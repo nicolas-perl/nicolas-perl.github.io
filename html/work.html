@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="html-noScroll">
+
+<head>
+  <!-- Title-->
+  <title>nicolas.perl</title>
+
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+  <!-- Animate.css Implementation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/css/style_desktop.css" media="screen and (min-width: 992px)"/>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top p-md-3">
+        <p class="iconText index-nav hide-on-mobile">nicolas.perl</p> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-center navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="/" data-bs-target=".navbar-collapse.show">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/work.html" data-bs-target=".navbar-collapse.show">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/about.html" data-bs-target=".navbar-collapse.show">about</a>
+            </li>
+            <li class="nav-item ml-5">
+              <span class="divider">|</span >
+            </li>
+            <li class="nav-item ml-5">
+              <button id="theme-toggle" class="mode-switch ml-10 divider">
+                <img id="theme-icon" src="/images/icons/moon.svg" alt="Toggle Dark Mode" />
+                <img id="theme-icon-filled" src="/images/icons/moon-filled.svg" alt="Toggle Dark Mode" class="hidden" />
+            </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+
+  <!-- Start Title Section -->
+  <div class="aboutPage justify-content-center align-items-center">
+    <div class="text-center">
+      <h2 class="workTitle animate__animated animate__fadeIn">
+        my.work
+      </h2>
+      <div class="work-container">
+        <div class="row d-flex gx-5 align-items-stretch">
+          <div class="col-md-1"></div>
+          <div class="col-md-4 text-center">
+            <div class="work-image-container">
+              <img src="/images/docpit.JPG" alt="Nicolas Perl" class="img-fluid" />
+            </div>
+          </div>
+          <!-- Center Column (Text Content) -->
+          <div class="col-md-6 text-center">    
+            <h2 class="workHeading"> <a href="/html/work/docpit.html" class="workProjectLink">DocPit</a></h2>
+            <h2 class="workText">
+              By providing an intuitive and efficient platform, 
+              DocPit aims to support healthcare professionals all across Austria in delivering the quality care their patients deserve.
+          </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+      </div>
+      <div class="work-container">
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-1"></div>
+          <!-- Center Column (Text Content) -->
+          <div class="col-md-6 text-center">
+            <h2 class="workHeading"> <a href="/html/work/personalWebsite.html" class="workProjectLink">nicolasperl.com</a></h2>
+            <h2 class="workText">
+              This project is all about my personal website dedicated to my photography business, showing off my work and projects I have been working on.
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="work-image-container">
+              <img src="/images/nicolasperlcom.png" alt="Nicolas Perl" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+      </div>
+      <div class="work-container">
+        <div class="row d-flex gx-5 align-items-stretch">
+          <div class="col-md-1"></div>
+          <div class="col-md-4 text-center">
+            <div class="work-image-container">
+              <img src="/images/mastermind.JPG" alt="Nicolas Perl" class="img-fluid" />
+            </div>
+          </div>
+          <!-- Center Column (Text Content) -->
+          <div class="col-md-6 text-center">
+            <h2 class="workHeading"> <a href="/html/work/mastermind.html" class="workProjectLink">Mastermind Android App</a></h2>
+            <h2 class="workText">
+              Focusing on a minimalistic and simplistic apprach, I created an Android App of the game Mastermind.
+              The app offers an intuitive user experience while preserving the game's strategic challenge.
+          </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+      </div>
+      <footer class="footer text-center text-white mt-1">
+        <div class="text-center p-3 footer-content">
+          <p class="mb-0">
+            &copy; Nicolas Perl,
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+  <!-- Javascript für navbar und theme toggler -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"async>
+  </script>
+  <script src="/theme-toggle.js"></script>
+</body>
+
+</html>

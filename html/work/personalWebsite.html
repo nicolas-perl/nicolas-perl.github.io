@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="html-noScroll">
+
+<head>
+  <!-- Title-->
+  <title>nicolas.perl</title>
+
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+  <!-- Animate.css Implementation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/css/style_desktop.css" media="screen and (min-width: 992px)"/>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top p-md-3">
+        <p class="iconText index-nav hide-on-mobile">nicolas.perl</p> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-center navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="/" data-bs-target=".navbar-collapse.show">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/work.html" data-bs-target=".navbar-collapse.show">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/about.html" data-bs-target=".navbar-collapse.show">about</a>
+            </li>
+            <li class="nav-item ml-5">
+              <span class="divider">|</span >
+            </li>
+            <li class="nav-item ml-5">
+              <button id="theme-toggle" class="mode-switch ml-10 divider">
+                  <img id="theme-icon" src="/images/icons/moon.svg" alt="Toggle Dark Mode" />
+                  <img id="theme-icon-filled" src="/images/icons/moon-filled.svg" alt="Toggle Dark Mode" class="hidden" />
+              </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+
+  <!-- Start Title Section -->
+  <div class="aboutPage justify-content-center align-items-center">
+    <div class="text-center">
+      <h2 class="aboutTitle animate__animated animate__fadeIn">
+        nicolasperl.com
+      </h2>
+      <div class="about-container">
+        <div class="row d-flex align-items-stretch">
+          <!-- Left Column (Optional Image) -->
+          <div class="col-md-3 text-center"></div>
+          <!-- Center Column (Text Content) -->
+          <div class="col-md-6 text-center">
+            <h2 class="aboutText animate__animated animate__fadeIn">
+              Since photography, travelling and storytelling have grown to be my favourite things to do in my spare time I decided
+              to create a dedicated website to show off my work.
+              The goal was to give it a visually appealing, minimal and modern look.
+          </div>
+          <!-- Right Column (Optional Image) -->
+          <div class="col-md-3 text-center">
+          </div>
+        </div>
+      </div>
+    </div> 
+        
+    <!-- The Timeline -->
+    <ul class="timeline">
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">Research</span>
+          </div>
+          <div class="prjText-r">
+            Originally evolving out of a web page dedicated to my freelance work focusing on PCB design and software development, 
+            I wanted to start fresh since this web page would focus on a way different audience and user base.
+            I started off by looking at different websites and work from established photographers in the industry of visual storytelling such as
+            @frauki, @withluke, @petermckinnon and @angela.neururer.
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">Development</span>
+          </div>
+          <div class="prjText-l">
+            I really liked the idea of a statement picture when entering the homepage, similar to petermckinnon.com.
+            In the first version only 3 tabs existed: home, work and about.
+            The about page should be dedicated to all sorts of photography projects including a main overview with individual
+            html pages for the projects showing off the images in a visually pleasing grid alignment.
+            The about section is all about me, my background and links to my mail and socials.
+            <br><br>
+            I was clear from the get-go that I wanted to design it solely by myself. 
+            Even thought there are plenty of good-looking templates out there, nothing is better than saying you built your own website.
+            By using HTMl, CSS and Bootstrap I started creating solution based on the design ideas and inspiration gathered during the research phase.
+            Working with version control software made it easy to keep track of the changes and progess made.
+            I split the work into milestones and created specific timelines in Notion for specific add-ons and designs.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/website_development.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">Release and (Future) Add-Ons</span>
+          </div>
+          <div class="prjText-r">
+            It took several iteration to refine and enhance elements like the work grid or a dedicated template for the blogs.
+            Another huge topic was the mobile-CSS integration, which definitely exceeded my expections in regards to time consumption and necessary adaptions.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/website_1.png" class="img-fluid" />
+            </div>
+          </div>
+          <div class="prjText-r">
+            <br>
+            The minimalistic design using a distinct font-family, fitting colors and few, cohesive and minimal elements make it stand out
+            and a perfect fit for its purpose: a relaxing space inviting you to get lost in images of nature, road trips and unforgetable moments.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/website_2.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <footer class="footer text-center text-white mt-1">
+      <div class="text-center p-3 footer-content">
+        <p class="mb-0">
+          &copy; Nicolas Perl,
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Javascript für navbar und theme toggler -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"async>
+  </script>
+  <script src="/theme-toggle.js"></script>
+</body>
+
+</html>
