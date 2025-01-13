@@ -20,8 +20,7 @@
   /* navbar */
 
   .iconText {
-    font-weight: 200 !important;
-    letter-spacing: 0px !important;
+    letter-spacing: 0.5px !important;
     font-size: 18px !important;
     margin-top: 70px !important;
     color: var(--gray) !important;
@@ -58,7 +57,6 @@
     position: relative !important;
     padding-right: 10px;
     text-decoration: none;
-    color: var(--gray) !important;
     letter-spacing: 0.1px;
     margin-top: 40px;
   }
@@ -112,6 +110,19 @@
     margin-left: 8px;
     margin-top:38px
   }
+
+  .hidden {
+    display: none;
+  }
+
+  .mode-switch:hover #theme-icon {
+    display: none;
+  }
+
+  .mode-switch:hover #theme-icon-filled {
+    display: inline-block;
+  }
+  
 
   /*
    Footer
@@ -186,6 +197,8 @@
     padding-top: 10vh;
     font-family: "syne-s";
     padding-bottom: 3vh;
+    font-size: 2rem;
+    text-align: center;
   }
 
   .aboutText {
@@ -206,7 +219,7 @@
   .icon-container {
     padding-top: 30px;
     filter: invert();
-    margin-bottom: 80px;
+    margin-bottom: 180px;
   }
   
   /* Filter for light mode */
@@ -216,22 +229,23 @@
 
   .image-container {
     background-color: var(--image-container-bg);
-    padding: 10px; /* Equal padding on all sides for the image */
+    padding: 10px;
     padding-bottom: 0px;
-    text-align: center; /* Center align the content */
-    width: fit-content; /* Adjust to content width */
+    text-align: center;
+    width: fit-content;
     height: fit-content;
-    margin: 20px; /* Center the entire container on the page */
-    border-radius: 1px; /* Optional: Rounded corners */
+    margin: 20px;
+    margin-top: 0vh;
+    border-radius: 1px;
   }
   
   .image-container img {
-    display: block; /* Remove inline space */
-    margin: 0 auto; /* Center the image */
+    display: block;
+    margin: 0 auto;
   }
   
   .caption {
-    font-size: 12px; /* Adjust as needed */
+    font-size: 12px;
     text-align: start;
     font-family: "syne";
     letter-spacing: 1px;
@@ -245,7 +259,7 @@
   .work-container{
     margin-left: 8vw;
     margin-right: 8vw;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     margin-top: 100px;
   }
   
@@ -260,7 +274,7 @@
     font-family: "syne-s";
     text-align: start;
     font-size: 26px;
-    
+    margin-top: 0px !important;
   }
 
   .workHeading a{
@@ -394,20 +408,7 @@
   text-align: left;
 }
 
-/*
-  Icon hover animation
-*/
-
-.hidden {
-  display: none;
+.hide-on-mobile{
+  visibility: visible;
 }
-
-.mode-switch:hover #theme-icon {
-  display: none;
-}
-
-.mode-switch:hover #theme-icon-filled {
-  display: inline-block;
-}
-  
 }

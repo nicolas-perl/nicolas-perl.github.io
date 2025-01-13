@@ -69,7 +69,7 @@ html {
   scrollbar-color: var(--gray) var(--black);
 }
 
-/* The progress container (grey background) */
+/* progress container (grey background) */
 .progress-container {
   width: 100%;
   position:fixed;
@@ -78,11 +78,29 @@ html {
   background: white;
 }
 
-/* Remove default button styles */
+/* remove default button styles */
 #theme-toggle {
-  background: none; /* No background */
+  background: none;
   border: none !important;
-  outline: none; /* Remove outline on focus */
-  text-decoration: none; /* Remove any text decorations */
-  cursor: pointer; /* Change cursor to pointer for interactivity */
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #151515 !important;
+    padding-bottom: 20px;
+  }
+
+  .navbar-nav {
+    background-color: #151515 !important;
+  }
+
+  .nav-item {
+    background-color: #151515 !important; /* Ensure all items match */
+  }
+  .navbar{
+    background-color: #151515 !important;
+  }
 }
