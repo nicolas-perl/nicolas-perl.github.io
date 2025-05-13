@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="html-noScroll">
+
+<head>
+  <!-- Title-->
+  <title>nicolas.perl</title>
+
+  <!-- SEO Stuff-->
+  <meta name="description" content="Hello there! I'm Nicolas, a passionate hobby photographer, graduate engineering student, and software developer hailing from Austria. ">
+  <meta name="keywords" content="Nicolas Perl, photographer, engineering student, software developer">
+  <meta name="author" content="Nicolas Perl">
+
+  <!-- Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+  <!-- Animate.css Implementation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/css/style_mobile.css" media="screen and (min-width: 300px)"/>
+  <link rel="stylesheet" type="text/css" href="/css/style_desktop.css" media="screen and (min-width: 992px)"/>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top p-md-3">
+        <p class="iconText index-nav hide-on-mobile">nicolas.perl</p> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-center navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="/" data-bs-target=".navbar-collapse.show">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/work.html" data-bs-target=".navbar-collapse.show">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/about.html" data-bs-target=".navbar-collapse.show">about</a>
+            </li>
+            <li class="nav-item ml-5">
+              <span class="divider">|</span >
+            </li>
+            <li class="nav-item ml-5">
+              <button id="theme-toggle" class="mode-switch ml-10 divider">
+                <img id="theme-icon" src="/images/icons/moon.svg" alt="Toggle Dark Mode" />
+                <img id="theme-icon-filled" src="/images/icons/moon_filled.svg" alt="Toggle Dark Mode" class="hidden" />
+            </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+
+  <!-- Start Title Section -->
+  <div class="aboutPage justify-content-center align-items-center">
+    <div class="text-center">
+      <h2 class="aboutTitle animate__animated animate__fadeIn">
+        Bauernschnapsen
+      </h2>
+      <div class="about-container">
+        <div class="row d-flex align-items-stretch">
+          <!-- Left Column (Optional Image) -->
+          <div class="col-md-3 text-center"></div>
+          <!-- Center Column (Text Content) -->
+          <div class="col-md-6 text-center">
+            <h2 class="aboutText animate__animated animate__fadeIn">
+                Based on the classic Austrian card game Bauernschnapsen (also known as 4er-Schnapsen), 
+                this game brings strategic team-based trick-taking fun to your device. 
+                You can play with smart AI opponents and experience authentic Austrian gameplay.     
+          </div>
+          <!-- Right Column (Optional Image) -->
+          <div class="col-md-3 text-center">
+          </div>
+        </div>
+      </div>
+    </div> 
+        
+    <!-- The Timeline -->
+    <ul class="timeline">
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">Research & Prototyping</span>
+          </div>
+          <div class="prjText-r">
+            The first step was to get familiar with the gameplay and its many different variations.
+            The game is played with a 20-card deck, where each player has 5 cards.
+            Playing in teams of two, the goal is to win 24 points by playing different strategies and winning tricks.
+            <br><br>
+            Comparing different implementations and apps focusing on the two-player version of this game, I started to highlight common features and layouts and created first hand-drawn wireframes.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/schnapsen/schnapsenWireframe.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">Development</span>
+          </div>
+          <div class="prjText-l">
+            This being my first Flutter project, I started with the implementation of the game logic and by getting familiar with the framework and language itself.
+            Using version control software from the get-go, I started with a terminal-based version to get familiar with the game logic and its rules.
+            <br><br>
+            Focusing solely on the "normal mode" game logic first, I created a fist UI prototype that incorporated the proposed wireframes as a guide.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/schnapsen/schnapsenOld.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="prjText-r">
+            After the logic was implemented and bug-free, I started to implement the backend.
+            The approach was to use a local drift database to store the game state and player data when offline.
+            This way, the game can be played offline and the data is stored locally.
+            If the user has internet connection, the data is synced with a remote Supabase database.
+            <br><br>
+
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/schnapsen/schnapsenLogin.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+
+        <li>
+            <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag prjHeading">Adding Features & Final Prototype</span>
+            </div>
+            <div class="prjText-l">
+                Over several iterations a more refined version was created including a login, music and sound effects.
+                Adding music, using a fitting font an visuals truly completed the app.
+                <br><br>
+                The next step is to do some user testing, get feedback and make the app available on the Play Store / App Store.
+                A multiplayer mode would also be a great addition.
+            </div>
+            <div class="text-center pt-5">
+                <div class="work-image-container">
+                <img src="/images/projects/schnapsen/schnapsen2.webp" class="img-fluid" />
+                </div>
+            </div>
+            <div class="text-center pt-5">
+                <div class="work-image-container">
+                <img src="/images/projects/schnapsen/schnapsen.webp" class="img-fluid" />
+                </div>
+            </div>
+            </div>
+        </li>
+    </ul>
+
+
+
+    <footer class="footer text-center text-white mt-1">
+      <div class="text-center p-3 footer-content">
+        <p class="mb-0">
+          &copy; Nicolas Perl,
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script defer src="/theme-toggle.js"></script>
+</body>
+
+</html>

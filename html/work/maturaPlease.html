@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="html-noScroll">
+
+<head>
+  <!-- Title-->
+  <title>nicolas.perl</title>
+
+  <!-- SEO Stuff-->
+  <meta name="description" content="Hello there! I'm Nicolas, a passionate hobby photographer, graduate engineering student, and software developer hailing from Austria. ">
+  <meta name="keywords" content="Nicolas Perl, photographer, engineering student, software developer">
+  <meta name="author" content="Nicolas Perl">
+
+  <!-- Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+  <!-- Animate.css Implementation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/css/style_mobile.css" media="screen and (min-width: 300px)"/>
+  <link rel="stylesheet" type="text/css" href="/css/style_desktop.css" media="screen and (min-width: 992px)"/>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top p-md-3">
+        <p class="iconText index-nav hide-on-mobile">nicolas.perl</p> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-center navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="/" data-bs-target=".navbar-collapse.show">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/work.html" data-bs-target=".navbar-collapse.show">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/about.html" data-bs-target=".navbar-collapse.show">about</a>
+            </li>
+            <li class="nav-item ml-5">
+              <span class="divider">|</span >
+            </li>
+            <li class="nav-item ml-5">
+              <button id="theme-toggle" class="mode-switch ml-10 divider">
+                <img id="theme-icon" src="/images/icons/moon.svg" alt="Toggle Dark Mode" />
+                <img id="theme-icon-filled" src="/images/icons/moon_filled.svg" alt="Toggle Dark Mode" class="hidden" />
+            </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+
+  <!-- Start Title Section -->
+  <div class="aboutPage justify-content-center align-items-center">
+    <div class="text-center">
+      <h2 class="aboutTitle animate__animated animate__fadeIn">
+        Matura, Please!
+      </h2>
+      <div class="about-container">
+        <div class="row d-flex align-items-stretch">
+          <!-- Left Column (Optional Image) -->
+          <div class="col-md-3 text-center"></div>
+          <!-- Center Column (Text Content) -->
+          <div class="col-md-6 text-center">
+            <h2 class="aboutText animate__animated animate__fadeIn">
+                Matura, Please! is the product of a <a href="https://konomondo.at/oer-game-jam/" class="mail"> 2-day Hackathon </a> 
+                at TU Graz powered by <a href="https://edventure.studio/" class="mail"> edventure Studios</a>. 
+                The goal is to combine Open Educational Resources (OER) and Game Jams to develop open educational games with motivated game developers, artists and teachers. 
+                The declared aim is to help young people learn difficult concepts in STEM subjects. 
+                The open-source nature of the games allows them to be further developed and adapted at any time.
+
+                <br><br>
+                Designed and developed by a group of 4 students, this Unity game is designed to help students prepare for their Math Matura in a fun and engaging way.
+                <br><br>
+                <a href="https://shellrider.itch.io/matura-please" class="mail">Matura, Please! - Browser Game</a>
+            </div>
+          <!-- Right Column (Optional Image) -->
+          <div class="col-md-3 text-center">
+          </div>
+        </div>
+      </div>
+    </div> 
+        
+    <!-- The Timeline -->
+    <ul class="timeline">
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">Brainstorming Phase</span>
+          </div>
+          <div class="prjText-r">
+            The result of the brainstorming phase was a game concept that combines elements of "Papers, please!" and "You are not my neighbor".
+            The game is set in an office-like setting where the player has to check functions and their proposed attributes.
+            Depending on the correctness of the description, the player has to decide whether to accept or reject it.
+            <br><br>
+            Settled on the game concept, the first half-day was all about designing a first prototype.
+            I was responsible for the UI/UX Design.
+            <br><br>
+            Identifying the key elements of similar games such as "Papers, please!" and "You are not my neighbor", I started to draft first designs of UI components.
+            This being a 2-day hackathon, I had to keep the design simple and minimalistic.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/maturaPlease/maturaPleaseDraft.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">UI Design - Game Screen</span>
+          </div>
+          <div class="prjText-l">
+            Following the brainstorming phase, I started to draw the UI elements in Canva.
+            The goal was to create a simple and minimalistic design that would be easy to implement in Unity.
+            Therefore, strong communication with the developers was key.
+            <br><br>
+            I started with the game screen, as it would be the main screen of the game.
+            I tried to incorporate a similar design language to the game Mini Motorways, with its smooth color scheme and comic style look.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/maturaPlease/maturaPleaseUI.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag prjHeading">UI elements and Home Screen</span>
+          </div>
+          <div class="prjText-r">
+            I created a set of UI elements that would be used in the game, including interactive buttons of 2 to 3 states, a background, and other small objects.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/maturaPlease/maturaPleaseUI4.webp" class="img-fluid" />
+            </div>
+          </div>
+          <div class="prjText-r">
+            Another important part was to include a home screen with different difficulty levels that you can choose from.
+            I designed a simple home screen with an outside view of the office that you see before you start your work shift.
+            I tried to incorporate the settings and difficulty level selection seemingly into the whole design.
+          </div>
+            <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/maturaPlease/maturaPleaseUI2.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="direction-l">
+          <div class="prjText-l">
+            In the end all that was left was a report card and a background for the game screen window.
+            I designed a simple report card that gives the user some performance metrics as well as a feedback in the form of a 3-star international rating system.
+          </div>
+          <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/maturaPlease/maturaPleaseUI3.webp" class="img-fluid" />
+            </div>
+          </div>
+          <div class="prjText-l">
+            The background for the game screen window was designed to be a simple waiting-room-like setting with a few chairs, a ceiling fan and a plant.
+            In the game version this go blurred out, so the player can focus more on whats really relevant.
+          </div>
+        <div class="text-center pt-5">
+            <div class="work-image-container">
+              <img src="/images/projects/maturaPlease/maturaPleaseUI5.webp" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <footer class="footer text-center text-white mt-1">
+      <div class="text-center p-3 footer-content">
+        <p class="mb-0">
+          &copy; Nicolas Perl,
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script defer src="/theme-toggle.js"></script>
+</body>
+
+</html>
