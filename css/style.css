@@ -104,3 +104,20 @@ html {
     background-color: #151515 !important;
   }
 }
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  max-height: auto; width: auto; max-width: 1000px; max-height: 75vh;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  border-radius: 15px;
+}
+
+.close:hover, .close:focus { color: #bbb; text-decoration: none; cursor: pointer; }
